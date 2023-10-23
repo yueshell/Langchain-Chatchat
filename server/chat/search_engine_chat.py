@@ -16,7 +16,7 @@ from typing import List, Optional, Dict
 from server.chat.utils import History
 from langchain.docstore.document import Document
 import json
-
+from  server.chat.search_issue import CustomDuckDuckGoSearchAPIWrapper
 
 def bing_search(text, result_len=SEARCH_ENGINE_TOP_K):
     if not (BING_SEARCH_URL and BING_SUBSCRIPTION_KEY):
@@ -29,7 +29,7 @@ def bing_search(text, result_len=SEARCH_ENGINE_TOP_K):
 
 
 def duckduckgo_search(text, result_len=SEARCH_ENGINE_TOP_K):
-    search = DuckDuckGoSearchAPIWrapper()
+    search = CustomDuckDuckGoSearchAPIWrapper()
     return search.results(text, result_len)
 
 
