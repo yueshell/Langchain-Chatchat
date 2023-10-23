@@ -115,11 +115,6 @@ FSCHAT_MODEL_WORKERS = {
     # },
     # "Qwen-14B-Chat": {
     # },
-    # "gpt-3.5-turbo": {
-    #     "api_base_url": "https://api.openai.com/v1",
-    #     "api_key": "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",
-    #     "openai_proxy": "http://heyue:heyue2019@172.16.6.7:1080",
-    # },
 }
 
 # fastchat multi model worker server

@@ -7,4 +7,5 @@ from .translator import translate
 from .weather import weathercheck
 from .shell import shell
 from .search_internet import search_internet
+from .myagent import search_chain
 

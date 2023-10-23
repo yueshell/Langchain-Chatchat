@@ -31,6 +31,11 @@ tools = [
         name="互联网查询工具",
         description="如果你无法访问互联网，这个工具可以帮助你访问Bing互联网来解答问题",
     ),
+    Tool.from_function(
+        func=search_chain,
+        name="商品查询工具",
+        description="无需访问互联网",
+    ),
 ]
 
 tool_names = [tool.name for tool in tools]

@@ -84,12 +84,6 @@ LANGCHAIN_LLM_MODEL = {
     #     "api_key": "your OPENAI_API_KEY",
     #     "openai_proxy": "",
     # },
-    # "OpenAI": {
-    #     "model_name": "gpt-3.5-turbo",
-    #     "api_base_url": "https://api.openai.com/v1",
-    #     "api_key": "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",
-    #     "openai_proxy": "http://heyue:heyue2019@172.16.6.7:1080",
-    # },
     # "Anthropic": {
     #     "model_name": "your claude model name(such as claude2-100k)",
     #     "api_key":"your ANTHROPIC_API_KEY",
@@ -112,11 +106,6 @@ ONLINE_LLM_MODEL = {
     # # 4.0 seconds as it raised APIConnectionError: Error communicating with OpenAI.
     # # 需要添加代理访问(正常开的代理软件可能会拦截不上)需要设置配置openai_proxy 或者 使用环境遍历OPENAI_PROXY 进行设置
     # # 比如: "openai_proxy": 'http://127.0.0.1:4780'
-    # "gpt-3.5-turbo": {
-    #     "api_base_url": "https://api.openai.com/v1",
-    #     "api_key": "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",
-    #     "openai_proxy": "http://heyue:heyue2019@172.16.6.7:1080",
-    # },
     # # 线上模型。请在server_config中为每个在线API设置不同的端口
     # # 具体注册及api key获取请前往 http://open.bigmodel.cn
     # "zhipu-api": {
