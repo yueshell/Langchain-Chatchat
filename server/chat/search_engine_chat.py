@@ -20,6 +20,7 @@ from langchain.docstore.document import Document
 import json
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from markdownify import markdownify
+from server.chat.utils import CustomDuckDuckGoSearchAPIWrapper
 
 
 def bing_search(text, result_len=SEARCH_ENGINE_TOP_K, **kwargs):
@@ -33,7 +34,7 @@ def bing_search(text, result_len=SEARCH_ENGINE_TOP_K, **kwargs):
 
 
 def duckduckgo_search(text, result_len=SEARCH_ENGINE_TOP_K, **kwargs):
-    search = DuckDuckGoSearchAPIWrapper()
+    search = CustomDuckDuckGoSearchAPIWrapper()
     return search.results(text, result_len)
 
 
