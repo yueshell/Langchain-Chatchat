@@ -1,5 +1,4 @@
 from langchain.utilities.bing_search import BingSearchAPIWrapper
-from langchain.utilities.duckduckgo_search import DuckDuckGoSearchAPIWrapper
 from configs import (BING_SEARCH_URL, BING_SUBSCRIPTION_KEY, METAPHOR_API_KEY,
                      LLM_MODELS, SEARCH_ENGINE_TOP_K, TEMPERATURE,
                      TEXT_SPLITTER_NAME, OVERLAP_SIZE)
