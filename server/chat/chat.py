@@ -18,7 +18,7 @@ from server.callback_handler.conversation_callback_handler import ConversationCa
 
 
 async def chat(query: str = Body(..., description="用户输入", examples=["恼羞成怒"]),
-               conversation_id: str = Body("", description="对话框ID"),
+               conversation_id: str = Body(" ", description="对话框ID"),
                history_len: int = Body(-1, description="从数据库中取历史消息的数量"),
                history: Union[int, List[History]] = Body([],
                                                          description="历史对话，设为一个整数可以从数据库中读取历史消息",

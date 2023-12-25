@@ -22,12 +22,12 @@ tools = [
         description="",
         args_schema=WhetherSchema,
     ),
-    Tool.from_function(
-        func=shell,
-        name="shell",
-        description="Use Shell to execute Linux commands",
-        args_schema=ShellInput,
-    ),
+    # Tool.from_function(
+    #     func=shell,
+    #     name="shell",
+    #     description="Use Shell to execute Linux commands",
+    #     args_schema=ShellInput,
+    # ),
     Tool.from_function(
         func=search_knowledgebase_complex,
         name="search_knowledgebase_complex",
@@ -46,12 +46,12 @@ tools = [
         description="Useful for when you need to calculate difficult formulas",
         args_schema=WolframInput,
     ),
-    Tool.from_function(
-        func=search_youtube,
-        name="search_youtube",
-        description="use this tools to search youtube videos",
-        args_schema=YoutubeInput,
-    ),
+    # Tool.from_function(
+    #     func=search_youtube,
+    #     name="search_youtube",
+    #     description="use this tools to search youtube videos",
+    #     args_schema=YoutubeInput,
+    # ),
 ]
 
 tool_names = [tool.name for tool in tools]
