@@ -40,7 +40,7 @@ LANGCHAIN_LLM_MODEL = {
     #     "model_name": "gpt-3.5-turbo",
     #     "device": "cpu",
     #     "api_base_url": "https://api.openai.com/v1",
-    #     "api_key": "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",
+    #     "api_key": "",
     #     "openai_proxy": "socks5://172.16.6.7:9050",
     #     "placeholder": "OpenaiWorker",
     # },
@@ -52,7 +52,7 @@ ONLINE_LLM_MODEL = {
         "model_name": "gpt-3.5-turbo",
         "device": "cpu",
         "api_base_url": "https://api.openai.com/v1",
-        "api_key": "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",
+        "api_key": "",
         "openai_proxy": "http://heyue:heyue2019@172.16.6.7:1080",
     },
 
